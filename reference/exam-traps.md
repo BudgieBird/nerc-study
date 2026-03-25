@@ -30,7 +30,7 @@ Frequency is SYSTEM-WIDE across the entire interconnection. Voltage is LOCAL or 
 ATC = TTC - TRM - Existing Commitments (including CBM) + Postbacks + Counterflows. Postbacks and counterflows ADD back to available capacity.
 
 ## TRAP 9 — Reliability Directive vs. Operating Instruction
-A Reliability Directive IS an Operating Instruction (subset). Not all Operating Instructions are Reliability Directives. A Reliability Directive specifically addresses an actual or expected Emergency.
+A Reliability Directive IS an Operating Instruction (subset). Not all Operating Instructions are Reliability Directives. A Reliability Directive specifically addresses an Emergency or Adverse Reliability Impact (not just Emergencies — an Adverse Reliability Impact can exist without a declared Emergency). Per COM-002-4, the sender must use the phrase "This is a Reliability Directive."
 
 ## TRAP 10 — Who Calculates IROLs
 The RC calculates IROLs. The TOP/BA cannot — they lack the wide-area view.
@@ -40,3 +40,12 @@ Thermal (current/heating), voltage (magnitude), and stability (angle/transient).
 
 ## TRAP 12 — Next-Day vs. Real-Time
 The RC must perform BOTH next-day analysis and real-time assessments (IRO-008). Not just real-time.
+
+## TRAP 13 — Who Declares EEA Levels
+The RC declares EEA levels, NOT the BA. The BA may request the RC to declare an EEA when it cannot meet demand or maintain reserves, but the RC holds the authority to officially declare the alert level. The RC may also declare an EEA on its own judgment without a BA request. Students confuse the BA's role (identifying the capacity/energy deficiency) with the RC's role (formally declaring the alert).
+
+## TRAP 14 — Interchange Curtailment Authority
+The RC can curtail Confirmed Interchange that adversely impacts reliability (Task Statement 4). However, the RC cannot unilaterally modify Arranged Interchange before it reaches Confirmed status — the interchange scheduling process must be followed. Know the interchange state progression: Arranged → Confirmed → Implemented.
+
+## TRAP 15 — State Estimator vs. RTCA
+The State Estimator shows the CURRENT state of the system ("what IS happening now"). Real-Time Contingency Analysis (RTCA) shows what WOULD happen IF a contingency occurs ("what if"). Students confuse "what is" with "what if." The State Estimator feeds the RTCA — RTCA runs contingencies against the State Estimator solution.

@@ -55,7 +55,7 @@ This file is GROUND TRUTH for all validation. Update as new terms are researched
 - FA = Frequency Actual (Hz)
 - FS = Frequency Scheduled (Hz, normally 60.000)
 - IME = Interchange Meter Error (MW)
-- IIM = Inadvertent Interchange Mitigation (MW, replaces legacy Automatic Time Error Correction term)
+- IIM = Inadvertent Interchange Management (MW, replaces legacy Automatic Time Error Correction term)
 
 **Frequency Response:** Equipment response as a result of a change in system frequency.
 
