@@ -126,7 +126,7 @@ nerc-study/
 |---|---|---|
 | `/study [topic]` | Start a tutor session with 4-part format: definition, analogy, scenario, comprehension check | 45-60 min |
 | `/research [topic]` | Deep-dive research using web search; stages findings for review | 15 min |
-| `/quiz [topic\|20\|full]` | Generate practice exam questions, grade, and log scores | 20 min |
+| `/quiz [topic\|20\|full\|"full sim"]` | Generate practice exam questions, grade, and log scores. "full sim" = 120q endurance test | 20 min (full sim: 3 hrs) |
 | `/rapid-fire [topic]` | Quick recall drilling on definitions, thresholds, and entity responsibilities | 10 min |
 | `/validate [claim]` | Fact-check a claim against reference files | As needed |
 | `/promote` | Review and promote staged additions to reference files | As needed |
@@ -140,10 +140,10 @@ Each skill runs on a specific model chosen for the task:
 
 | Skill | Model | Role |
 |---|---|---|
-| `nerc-tutor` | Opus 4.6 | Schema-based teaching with analogies mapped to student background |
+| `nerc-tutor` | Opus 4.6 | Schema-based teaching with RC wide-area perspective training and analogies |
 | `nerc-research` | Sonnet 4.6 | Web search research on NERC standards and materials |
 | `nerc-comprehension` | Sonnet 4.6 | Socratic questioning to verify deep understanding |
-| `nerc-exam` | Haiku 4.5 | Fast practice question generation and grading |
+| `nerc-exam` | Haiku 4.5 | Practice questions with wrong-answer analysis, spaced repetition, and pacing |
 | `nerc-validator` | Opus 4.6 | Independent fact-checking against reference files |
 
 **Why different models?** Opus handles nuanced teaching and validation where accuracy is critical. Sonnet handles research and comprehension probing. Haiku handles high-volume question generation where speed matters more than depth.
