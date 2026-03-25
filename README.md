@@ -74,7 +74,7 @@ The entire system runs inside Claude Code. There is no web app, no database, no 
 
 Skills never write directly to reference files. New definitions, exam traps, and standard references discovered during sessions are staged in `reference/pending-review.md` with source attribution. You review and promote staged entries to the authoritative files via `/promote`.
 
-The exam skill reads your past scores from `/progress/daily-scores.md` and weights future question sets toward your weak domains. The `/review` command analyzes score trends and adjusts your study plan.
+The exam skill reads your past scores from `/progress/daily-scores.md` and weights future question sets toward your weak domains. Missed concepts are tracked in `/progress/review-schedule.md` with spaced repetition intervals (1d, 3d, 7d, 14d, 30d) so they resurface at optimal review times. The `/review` command analyzes score trends, lists concepts due for review, compares study time distribution against official exam domain weights, and adjusts your study plan.
 
 ## Project Structure
 
@@ -108,7 +108,8 @@ nerc-study/
 |
 |-- progress/                        # Performance tracking (auto-populated)
 |   |-- daily-scores.md.example      #   Template for quiz/exam score logging
-|   +-- weekly-reviews.md.example    #   Template for weekly analysis
+|   |-- weekly-reviews.md.example    #   Template for weekly analysis
+|   +-- review-schedule.md.example   #   Template for spaced repetition tracking
 |
 |-- CLAUDE.md.example                # Template -- copy to CLAUDE.md and customize
 +-- .gitignore                       # Keeps personal files out of version control
@@ -129,7 +130,7 @@ nerc-study/
 | `/rapid-fire [topic]` | Quick recall drilling on definitions, thresholds, and entity responsibilities | 10 min |
 | `/validate [claim]` | Fact-check a claim against reference files | As needed |
 | `/promote` | Review and promote staged additions to reference files | As needed |
-| `/review` | Analyze weekly scores, identify trends, adjust study plan | Weekly |
+| `/review` | Analyze scores, list spaced repetition items due, compare domain weight coverage, adjust plan | Weekly |
 
 The comprehension skill is triggered conversationally by saying **"Challenge me on [concept]"** rather than a slash command.
 
@@ -224,6 +225,7 @@ The timeline adapts to your actual study duration through the `/review` command.
    cp reference/analogy-map.md.example reference/analogy-map.md
    cp progress/daily-scores.md.example progress/daily-scores.md
    cp progress/weekly-reviews.md.example progress/weekly-reviews.md
+   cp progress/review-schedule.md.example progress/review-schedule.md
    ```
 
 3. Edit `CLAUDE.md` and fill in the **Student Profile** section with your actual background and exam score breakdown (if you have one).
@@ -292,6 +294,8 @@ Maps NERC concepts to analogies drawn from your professional background. The tut
 **Validator same-family limitation.** The validator skill runs on the same model family (Anthropic) as the tutor. When validator confidence is low (reference files insufficient), cross-validate with a non-Anthropic model or official NERC sources.
 
 **Not a replacement for official study materials.** This system supplements -- it does not replace -- NERC's official study materials, practice exams, or employer-provided training programs.
+
+**Practice exams include 20 unscored items.** The real exam has 140 questions (120 scored + 20 experimental). You cannot tell which are which. The practice tool does not simulate unscored items — all generated questions count toward your score.
 
 **Reference files can become outdated.** NERC periodically updates standards and requirements. Run `/research` regularly and verify reference files against the [official NERC standards page](https://www.nerc.com/pa/Stand/Pages/default.aspx).
 

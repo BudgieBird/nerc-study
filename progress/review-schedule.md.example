@@ -1,0 +1,24 @@
+# Spaced Repetition Schedule
+
+Missed concepts are tracked here with increasing review intervals.
+The exam skill updates this file after grading. The /review command lists what's due.
+
+## Interval Progression
+
+Missed → 1 day → 3 days → 7 days → 14 days → 30 days → Mastered (removed)
+A missed concept resets to the 1-day interval.
+
+## Entry Format
+
+```
+| Concept | Domain | Last Reviewed | Next Due | Interval |
+|---|---|---|---|---|
+| IROL Tv ≤ 30 min | Contingency | 2026-03-25 | 2026-03-26 | 1d |
+```
+
+## Active Review Schedule
+
+| Concept | Domain | Last Reviewed | Next Due | Interval |
+|---|---|---|---|---|
+
+<!-- Entries added automatically after quiz grading -->
