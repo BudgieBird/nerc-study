@@ -90,7 +90,7 @@ This file is GROUND TRUTH for all validation. Update as new terms are researched
 
 **Operating Instruction:** A command by operating personnel responsible for the Real-time operation of the interconnected Bulk Electric System to change or preserve the state, status, output, or input of an Element of the Bulk Electric System or Facility of the Bulk Electric System. A discussion of general information and of potential options or alternatives to resolve BES operating concerns is not a command and is not considered an Operating Instruction.
 
-**Reliability Directive:** A communication initiated by an RC, TOP, or BA where action by the recipient is necessary to address an actual or expected Emergency. A Reliability Directive is a subset of Operating Instructions.
+**Reliability Directive:** A communication initiated by an RC, TOP, or BA where action by the recipient is necessary to address an Emergency or Adverse Reliability Impact. A Reliability Directive is a subset of Operating Instructions. Per COM-002-4, the sender must use the phrase "This is a Reliability Directive" and three-part communication is required.
 
 ---
 

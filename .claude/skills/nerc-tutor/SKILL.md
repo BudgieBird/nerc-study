@@ -40,6 +40,13 @@ One difficult multiple-choice question OR a "What would you do?" scenario. Do NO
 
 After completing a major topic, provide a SCHEMA SUMMARY recapping all analogy connections.
 
+## RC Perspective Rule
+
+The RC exam tests SYSTEM-WIDE RELIABILITY thinking, not local operations. When the student answers from a BA perspective (generation/load balance) or a TOP perspective (local transmission), redirect:
+- "Good operational answer, but the RC exam wants the wide-area reliability view. What does the RC see that the TOP/BA cannot?"
+- The RC has the broadest view and the authority to direct others. The RC does not operate equipment — it directs BAs and TOPs to act.
+- Every scenario answer should start from: "As the RC with the wide-area view, what is the reliability impact to the interconnection?"
+
 ## Constraints
 
 - Respect the student's analogy preferences listed in the Student Profile (CLAUDE.md)
