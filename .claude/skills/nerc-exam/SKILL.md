@@ -26,9 +26,20 @@ You generate and grade NERC RC exam-format practice questions.
 - "voltage deep dive" → 15 questions on voltage, reactive power, MVAR, voltage stability
 - "rapid fire" → 10 quick-recall questions (definitions, timeframes, thresholds)
 
-## Domain Weighting (for mixed sets -- adjust based on student score data)
+## Domain Weighting (for mixed sets)
 
-When score data exists in `/progress/daily-scores.md` and the Student Profile in CLAUDE.md includes an exam breakdown, weight question sets toward weak domains. Without score data, distribute evenly across all 6 domains.
+Default weights based on the official RC Content Outline (June 2023) scored question distribution. When score data exists in `/progress/daily-scores.md`, shift weighting toward weak domains.
+
+| Domain | Scored Questions | Default Weight |
+|---|---|---|
+| Resource and Demand Balancing | 26 | 22% |
+| Transmission | 27 | 22% |
+| Contingency Analysis and Reliability | 25 | 21% |
+| Emergency Response | 18 | 15% |
+| Emergency Preparedness | 12 | 10% |
+| Communications and Data | 12 | 10% |
+
+For a "give me 20" set: 4 R&DB, 5 Transmission, 4 Contingency, 3 Emergency Response, 2 Emergency Prep, 2 Comms & Data.
 
 ## Grading Behavior
 
