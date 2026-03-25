@@ -1,0 +1,67 @@
+# NERC Analogy Map
+
+This file maps NERC RC exam concepts to analogies drawn from YOUR professional background.
+The tutor and comprehension skills read this file before every response.
+
+## How to Use This Template
+
+1. Copy this file to `reference/analogy-map.md`
+2. For each domain, pick the analogy source that fits YOUR experience
+3. Replace the example analogies with ones from your own work
+4. The more specific and personal the analogy, the better it sticks
+
+The example column below uses generic IT/infrastructure analogies as placeholders.
+
+## TRANSMISSION -> (YOUR BACKGROUND)
+| NERC Concept | Your Analogy |
+|---|---|
+| Power lines | Network cables / bandwidth links |
+| Transformers | Routers / switches (protocol translation) |
+| Thermal ratings | Throughput limits / bandwidth caps |
+| Power flow | Traffic routing / data flow |
+| ATC | Available bandwidth for new traffic |
+| Voltage | Signal quality / integrity |
+
+## CONTINGENCY ANALYSIS -> (YOUR BACKGROUND)
+| NERC Concept | Your Analogy |
+|---|---|
+| N-1 contingency | Single point of failure analysis |
+| N-2 contingency | Dual-failure scenario planning |
+| Reliability criteria | Uptime SLAs / availability targets |
+| SOL/IROL | Hard limits that trigger alerts/alarms |
+| Transmission limits | Capacity constraints on infrastructure |
+
+## COMMUNICATIONS & DATA -> (YOUR BACKGROUND)
+| NERC Concept | Your Analogy |
+|---|---|
+| SCADA/EMS | Monitoring and alerting platform |
+| Operating agreements | SLAs between teams or services |
+| Data exchange | API contracts / data feeds |
+| Reporting requirements | Alerting rules and notification paths |
+| Telemetry | Metrics collection and forwarding |
+
+## RESOURCE & DEMAND BALANCING -> (YOUR BACKGROUND)
+| NERC Concept | Your Analogy |
+|---|---|
+| Generation | Capacity / compute resources |
+| Load | User demand / request volume |
+| Spinning reserves | Hot standby capacity |
+| Frequency (60 Hz) | System health baseline / heartbeat |
+| ACE | Error signal driving corrective action |
+
+## EMERGENCY PREPAREDNESS -> (YOUR BACKGROUND)
+| NERC Concept | Your Analogy |
+|---|---|
+| Restoration plans | Disaster recovery plans / runbooks |
+| Blackstart capability | Cold boot from zero state |
+| Training requirements | DR drills / tabletop exercises |
+| Backup control center | Failover site / backup operations center |
+
+## EMERGENCY RESPONSE -> (YOUR BACKGROUND)
+| NERC Concept | Your Analogy |
+|---|---|
+| EEA Levels 1/2/3 | Severity escalation tiers (P1/P2/P3) |
+| RC directive authority | Incident commander authority |
+| Reporting hierarchies | Escalation chain during outages |
+| COM-002 3-part comms | Read-back protocol for critical commands |
+| Restoration procedures | Recovery operations / service restoration |

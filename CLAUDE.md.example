@@ -1,0 +1,112 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## What This Is
+
+A NERC System Operator Certification exam study environment built entirely on Claude Code skills and commands. There is no application code — the project is a structured set of reference files, progress logs, and Claude Code skills that together form an adaptive tutoring system for the Reliability Coordinator (RC) exam.
+
+## Student Profile
+
+- (X years) experience in energy/power systems
+- Strong in: (list your primary skills — e.g., control room operations, energy markets, transmission, etc.)
+- Expert in: (list tools/platforms you know well — e.g., EMS, SCADA, PI Historian, etc.)
+- Background: (any non-power-systems background that informs how you think — e.g., IT, engineering, etc.)
+- Has / Has NOT taken the RC exam before
+- Previous score breakdown (if applicable):
+  - Communications and Data: ___%
+  - Transmission: ___%
+  - Contingency Analysis and Reliability: ___%
+  - Emergency Response: ___%
+  - Emergency Preparedness: ___%
+  - Resource and Demand Balancing: ___%
+- Study timeline: (e.g., "40 days starting YYYY-MM-DD")
+- Analogy preferences: (list analogy types you DO NOT want — e.g., "no gaming analogies")
+
+> **Customize this section!** The tutor, comprehension, and exam skills all read this
+> profile to tailor explanations. The more specific you are, the better the analogies.
+> Update the analogy-map.md file to match your background once you've filled this in.
+
+## Architecture
+
+### Data Flow
+
+```
+/reference/*.md  <-  ground truth (skills READ these before every response)
+       ^
+       |  /promote (human review gate)
+       |
+/reference/pending-review.md  <-  staged additions (skills WRITE here)
+       ^
+       |
+  Skills (tutor, research, validator)
+       |
+       v
+/progress/*.md   <-  quiz scores and weekly reviews (exam skill appends here)
+```
+
+Skills never write directly to reference files. New definitions, traps, and standard
+references are staged in `pending-review.md` with source attribution. The student
+reviews and promotes entries via `/promote`.
+
+### Commands -> Skills
+
+Slash commands (`.claude/commands/`) are thin wrappers that activate skills (`.claude/skills/`). Each command reads `$ARGUMENTS` from the user and delegates to the appropriate skill:
+
+| Command | Activates Skill | Model |
+|---|---|---|
+| `/study [topic]` | nerc-tutor | Opus 4.6 |
+| `/research [topic]` | nerc-research | Sonnet 4.6 (with web search) |
+| `/quiz [topic\|20\|full]` | nerc-exam | Haiku 4.5 |
+| `/rapid-fire [topic]` | nerc-exam (rapid-fire mode) | Haiku 4.5 |
+| `/validate [claim]` | nerc-validator | Opus 4.6 |
+| `/promote` | (no skill — review pending additions) | — |
+| `/review` | (no skill — direct analysis) | — |
+
+The comprehension skill (`nerc-comprehension`, Sonnet 4.6) is triggered conversationally by "Challenge me on [concept]" rather than a slash command.
+
+### Reference Files (Ground Truth)
+
+All files in `/reference/` are **authoritative**. When training data conflicts with a reference file, the file wins. Skills must read these before responding:
+
+- `nerc-glossary.md` — NERC definitions and key terms for the RC exam
+- `nerc-standards-map.md` — NERC standards with requirements and exam focus areas
+- `exam-traps.md` — Known exam traps and common misconceptions
+- `analogy-map.md` — Analogy mappings for all 6 exam domains (customize to student background)
+
+Skills that discover new definitions, traps, or standard references stage them in `pending-review.md` with source attribution. They do NOT write directly to authoritative reference files. The student reviews and promotes staged content via `/promote`. The `/research` command also saves structured summaries to `/notes/`.
+
+### Progress Tracking
+
+- `/progress/daily-scores.md` — Quiz/exam scores logged by nerc-exam after grading
+- `/progress/weekly-reviews.md` — Analysis appended by `/review`
+
+Score format is documented in the files themselves. The exam skill reads past scores to weight future question sets toward weak domains.
+
+## NERC RC Exam Context
+
+- Format: Computer-based, multiple choice
+- Questions: ~100
+- Time: ~3 hours
+- Passing: Scaled score (varies; typically ~56/92 threshold range)
+
+### 6 Exam Domains
+
+1. Communications and Data
+2. Transmission
+3. Contingency Analysis and Reliability
+4. Emergency Response
+5. Emergency Preparedness
+6. Resource and Demand Balancing
+
+## Study Phases
+
+- Phase 1: Power theory foundations — voltage, real vs reactive power, power factor
+- Phase 2: Weakest areas — focus on lowest-scoring domains from exam breakdown
+- Phase 3: Reinforce improving domains, polish strong areas, full practice exams
+
+Adjust timeline to actual study duration. The system adapts via `/review`.
+
+## Validator Same-Family Limitation
+
+The validator runs on the same model family (Anthropic) as the tutor. When validator confidence is LOW (reference files insufficient), the student should cross-validate with a non-Anthropic model (e.g., GPT 5.4, Gemini 3.1 Pro) or official NERC sources.
