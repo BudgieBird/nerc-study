@@ -20,7 +20,7 @@ This file is GROUND TRUTH for all validation. Update as new terms are researched
 
 **Interconnection Reliability Operating Limit (IROL):** A System Operating Limit that, if violated, could lead to instability, uncontrolled separation, or Cascading outages that adversely impact the reliability of the Bulk Electric System.
 
-**System Operating Limit (SOL):** The value (such as MW, MVAR, amperes, frequency, or volts) that satisfies the most limiting of the prescribed operating criteria for a specified system configuration to ensure operation within acceptable reliability criteria.
+**System Operating Limit (SOL):** The value (such as MW, MVAR, amperes, frequency, or volts) that satisfies the most limiting of the prescribed operating criteria for a specified system configuration to ensure operation within acceptable reliability criteria. SOLs are based on the most limiting applicable equipment rating, Facility Rating, stability limit, or thermal limit for the specified system configuration.
 
 **Tv (IROL Tv):** The maximum time that an IROL can be violated before the risk to the interconnection or other Reliability Coordinator Area(s) becomes greater than acceptable. Each IROL's Tv shall be less than or equal to 30 minutes.
 
@@ -46,15 +46,16 @@ This file is GROUND TRUTH for all validation. Update as new terms are researched
 
 ## Balancing
 
-**Area Control Error (ACE):** The instantaneous difference between a Balancing Authority's net actual and scheduled interchange taking into account the effects of Frequency Bias, correction for meter error, and Automatic Time Error Correction.
+**Area Control Error (ACE):** The instantaneous difference between a Balancing Authority's net actual and scheduled interchange taking into account the effects of Frequency Bias, correction for meter error, and Inadvertent Interchange Mitigation (IIM).
 
-**ACE Equation:** ACE = (NIA - NIS) - 10B(FA - FS) - IME
+**ACE Equation:** ACE = (NIA - NIS) - 10B(FA - FS) - IME + IIM
 - NIA = Net Interchange Actual (MW)
 - NIS = Net Interchange Scheduled (MW)
 - B = Frequency Bias Setting (MW/0.1 Hz, negative number)
 - FA = Frequency Actual (Hz)
 - FS = Frequency Scheduled (Hz, normally 60.000)
 - IME = Interchange Meter Error (MW)
+- IIM = Inadvertent Interchange Mitigation (MW, replaces legacy Automatic Time Error Correction term)
 
 **Frequency Response:** Equipment response as a result of a change in system frequency.
 

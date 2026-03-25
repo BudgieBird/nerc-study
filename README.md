@@ -272,9 +272,9 @@ Maps NERC concepts to analogies drawn from your professional background. The tut
 |---|---|
 | Exam | NERC System Operator Certification -- Reliability Coordinator |
 | Format | Computer-based, multiple choice |
-| Questions | ~100 |
+| Questions | 140 (120 scored + 20 unscored experimental) |
 | Time | ~3 hours |
-| Passing | Scaled score (varies by exam form) |
+| Passing | 92 / 120 scored questions (RC credential) |
 
 ### 6 Exam Domains
 
