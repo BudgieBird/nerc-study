@@ -103,7 +103,6 @@ nerc-study/
 |   |-- nerc-standards-map.md        #   Standards with requirements and exam focus
 |   |-- exam-traps.md                #   Known exam traps and misconceptions
 |   |-- analogy-map.md.example       #   Template for background-specific analogies
-|   |-- frameworks-map.md            #   (if added) Regulatory framework mappings
 |   +-- pending-review.md            #   Staged additions awaiting /promote review
 |
 |-- progress/                        # Performance tracking (auto-populated)
