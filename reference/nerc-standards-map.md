@@ -12,15 +12,20 @@
 Every version suffix and effective date below was checked against NERC's enforcement
 register on 2026-08-03.
 
-> ## SCOPE: exam window August–September 2026
+> ## SCOPE
 >
-> Every standard listed in the six domain sections below is **enforceable now** and
-> therefore testable. The versions shown are the ones in force during the target window.
+> Every standard in the six domain sections below is **enforceable as of 2026-08-03**.
+> Teach and quiz from these versions.
 >
-> Standards becoming enforceable **2026-10-01 or later** are quarantined in the
-> [OUT OF SCOPE](#out-of-scope--not-enforceable-before-october-2026) section near the end
-> of this file. **Do not generate practice questions from that section.** If the exam date
-> moves to October 2026 or later, that section must be merged back into the domain tables.
+> Standards that are approved but **not yet enforceable** are listed separately at the end
+> of the file. Build practice questions from the enforceable set, not from that one.
+>
+> **There is no known "exam version cutover" date.** NERC builds the exam from the
+> job-task Content Outline (June 2023) and a pretested item bank. Neither the SOC Program
+> Manual nor the Exam Resource Materials references standard versions or enforcement dates
+> anywhere — the approved reference list names standard *families* only (BAL, COM, EOP,
+> FAC, INT, IRO, PRC, TOP, VAR). Do not tell the student that a standard's enforcement
+> date changes what is on their exam.
 
 ---
 
@@ -299,11 +304,10 @@ Three-part specifics:
 
 ---
 
-## OUT OF SCOPE — Not Enforceable Before October 2026
+## Approved But Not Yet Enforceable
 
-**Target exam window: August–September 2026.** Everything in this section is approved but
-**not yet enforceable** in that window. Do **not** generate practice questions from it, and
-do not treat it as testable content.
+These are real and verified against NERC's enforcement register, but they are **not in
+force as of 2026-08-03**. Quiz from the enforceable versions above.
 
 | Standard | Enforceable from | Note |
 |---|---|---|
@@ -316,26 +320,39 @@ do not treat it as testable content.
 | TOP-003-8 | 2029-04-01 | Order 901 IBR data specification |
 | EOP-004-5 | Filed, pending approval | **EOP-004-4 remains enforceable** |
 
-**For the August–September 2026 window, the correct answers are:**
+**What is true today:** PRC-024-3 covers frequency and voltage protection settings for all
+generators. TOP-003-6.1 is the current TOP/BA data specification. EOP-004-4 is the current
+event reporting standard. PRC-008-0, PRC-011-0, and PRC-017-1 are still enforceable and
+retire 2027-03-31.
 
-- **PRC-024-3** covers frequency and voltage protection settings for generators —
-  all generators. PRC-029 and PRC-030 do not exist yet.
-- **TOP-003-6.1** is the current TOP/BA data specification standard.
-- **EOP-004-4** is the current event reporting standard.
-- PRC-008-0, PRC-011-0, and PRC-017-1 are still enforceable (they retire 2027-03-31).
-
-### Why this batch exists (background only — not testable)
+### Why this batch exists (background)
 
 FERC issued **Order No. 901 on October 19, 2023**, directing NERC to develop standards
 addressing reliability risks from inverter-based resources across four milestones. The
-2026-10-01 batch is the Milestone 2 output (filed with FERC November 4, 2024):
-Project 2020-02 produced PRC-029-1 and the PRC-024-4 retitle, Project 2023-02 produced
-PRC-030-1. Separately, Project 2022-03 (Energy Assurance with Energy-Constrained
-Resources) produces TOP-003-7 and BAL-007-1.1.
+2026-10-01 batch is the Milestone 2 output (filed with FERC November 4, 2024): Project
+2020-02 produced PRC-029-1 and the PRC-024-4 retitle, Project 2023-02 produced PRC-030-1.
+Separately, Project 2022-03 (Energy Assurance with Energy-Constrained Resources) produces
+TOP-003-7 and BAL-007-1.1.
 
-Parts of the IBR wave are **already enforceable and therefore in scope**: the
-Inverter-Based Resource glossary term (2025-04-01), PRC-028-1 (2025-04-01), and the
-Generator Operator Category 1 / Category 2 split (2026-01-01).
+Parts of the IBR wave are **already enforceable**: the Inverter-Based Resource glossary
+term (2025-04-01), PRC-028-1 (2025-04-01), and the Generator Operator Category 1 /
+Category 2 split (2026-01-01).
+
+### A caution about item-bank lag, in both directions
+
+NERC pretests questions as unscored experimental items before they count, so the scored
+bank trails the standards by an unknown margin. That cuts two ways:
+
+- Do not chase brand-new standards. PRC-029 and PRC-030 are very unlikely to appear as
+  scored items for some time after they take effect.
+- Equally, do not assume the newest wording is always the keyed answer. Recent changes —
+  EOP-011-4 (2024-10-01), FAC-011-4 and FAC-014-3 (2024-04-01), TOP-001-6 (2024-04-01),
+  and the 2025 Glossary updates to ACE, Frequency Bias Setting, and the reserve terms —
+  may not be fully reflected in the bank yet.
+
+The stable strategy is to know the **current** standard and, where a definition changed
+recently, to also recognise what it replaced. `nerc-glossary.md` Part 3 covers the retired
+terms for exactly this reason.
 
 ---
 
