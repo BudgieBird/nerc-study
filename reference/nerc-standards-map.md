@@ -10,7 +10,17 @@
 - NERC ALIGN one-stop-shop standards register (status and effective dates)
 
 Every version suffix and effective date below was checked against NERC's enforcement
-register on 2026-08-03. Standards marked **FUTURE** are approved but not yet enforceable.
+register on 2026-08-03.
+
+> ## SCOPE: exam window August–September 2026
+>
+> Every standard listed in the six domain sections below is **enforceable now** and
+> therefore testable. The versions shown are the ones in force during the target window.
+>
+> Standards becoming enforceable **2026-10-01 or later** are quarantined in the
+> [OUT OF SCOPE](#out-of-scope--not-enforceable-before-october-2026) section near the end
+> of this file. **Do not generate practice questions from that section.** If the exam date
+> moves to October 2026 or later, that section must be merged back into the domain tables.
 
 ---
 
@@ -289,23 +299,43 @@ Three-part specifics:
 
 ---
 
-## Changing Soon — Know the Dates
+## OUT OF SCOPE — Not Enforceable Before October 2026
 
-| Standard | Status | Date | Note |
-|---|---|---|---|
-| PRC-024-4 | FUTURE | 2026-10-01 | Replaces PRC-024-3; retitled "…for Synchronous Generators" |
-| PRC-029-1 | FUTURE | 2026-10-01 | Frequency and Voltage Ride-through Requirements for IBRs |
-| PRC-030-1 | FUTURE | 2026-10-01 | Unexpected Inverter-Based Resource Event Mitigation |
-| TOP-003-7 | FUTURE | 2026-10-01 | Replaces TOP-003-6.1 |
-| EOP-004-5 | Filed, pending regulatory approval | — | **EOP-004-4 remains enforceable** |
-| BAL-007-1.1 | FUTURE | 2027-04-01 | Near-Term Energy Reliability Assessments |
-| PRC-008-0, PRC-011-0, PRC-017-1 | Retiring | 2027-03-31 | UFLS/UVLS/RAS maintenance standards |
-| IRO-010-6 | FUTURE | 2029-04-01 | Order 901 IBR data specification |
-| TOP-003-8 | FUTURE | 2029-04-01 | Order 901 IBR data specification |
+**Target exam window: August–September 2026.** Everything in this section is approved but
+**not yet enforceable** in that window. Do **not** generate practice questions from it, and
+do not treat it as testable content.
 
-The exam tests what is **enforceable on your exam date**. As of 2026-08-03 the
-2026-10-01 batch is not yet in force — but if you sit the exam in Q4 2026 or later,
-PRC-024-4, PRC-029-1, PRC-030-1, and TOP-003-7 are fair game.
+| Standard | Enforceable from | Note |
+|---|---|---|
+| PRC-024-4 | 2026-10-01 | Replaces PRC-024-3; retitled "…for Synchronous Generators" |
+| PRC-029-1 | 2026-10-01 | Frequency and Voltage Ride-through Requirements for IBRs |
+| PRC-030-1 | 2026-10-01 | Unexpected Inverter-Based Resource Event Mitigation |
+| TOP-003-7 | 2026-10-01 | Replaces TOP-003-6.1 |
+| BAL-007-1.1 | 2027-04-01 | Near-Term Energy Reliability Assessments |
+| IRO-010-6 | 2029-04-01 | Order 901 IBR data specification |
+| TOP-003-8 | 2029-04-01 | Order 901 IBR data specification |
+| EOP-004-5 | Filed, pending approval | **EOP-004-4 remains enforceable** |
+
+**For the August–September 2026 window, the correct answers are:**
+
+- **PRC-024-3** covers frequency and voltage protection settings for generators —
+  all generators. PRC-029 and PRC-030 do not exist yet.
+- **TOP-003-6.1** is the current TOP/BA data specification standard.
+- **EOP-004-4** is the current event reporting standard.
+- PRC-008-0, PRC-011-0, and PRC-017-1 are still enforceable (they retire 2027-03-31).
+
+### Why this batch exists (background only — not testable)
+
+FERC issued **Order No. 901 on October 19, 2023**, directing NERC to develop standards
+addressing reliability risks from inverter-based resources across four milestones. The
+2026-10-01 batch is the Milestone 2 output (filed with FERC November 4, 2024):
+Project 2020-02 produced PRC-029-1 and the PRC-024-4 retitle, Project 2023-02 produced
+PRC-030-1. Separately, Project 2022-03 (Energy Assurance with Energy-Constrained
+Resources) produces TOP-003-7 and BAL-007-1.1.
+
+Parts of the IBR wave are **already enforceable and therefore in scope**: the
+Inverter-Based Resource glossary term (2025-04-01), PRC-028-1 (2025-04-01), and the
+Generator Operator Category 1 / Category 2 split (2026-01-01).
 
 ---
 
